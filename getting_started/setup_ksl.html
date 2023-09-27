@@ -82,11 +82,39 @@
              
   <section id="install-swiftonize">
 <h1>Install Swiftonize:<a class="headerlink" href="#install-swiftonize" title="Link to this heading"></a></h1>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>tap<span class="w"> </span>pythonswiftlink/tools
+brew<span class="w"> </span>install<span class="w"> </span>swiftonize_master
+</pre></div>
+</div>
 </section>
 <section id="setting-up-new-working-folder">
 <h1>Setting up new working folder:<a class="headerlink" href="#setting-up-new-working-folder" title="Link to this heading"></a></h1>
 <p>Create a new empty folder of your choosing, and cd into it with <cite>Terminal</cite>.
 Now run the following command</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3.10<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+.<span class="w"> </span>venv/bin/activate
+
+pip<span class="w"> </span>install<span class="w"> </span>cython<span class="w"> </span><span class="c1">#==0.29.36</span>
+pip<span class="w"> </span>install<span class="w"> </span>https://github.com/PythonSwiftLink/mod-pbxproj/archive/master.zip
+pip<span class="w"> </span>install<span class="w"> </span>https://github.com/kivy/kivy-ios/archive/master.zip
+pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/PythonSwiftLink/SwiftTools
+
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/PythonSwiftLink/Kivy-iOS-XcTemplate
+cp<span class="w"> </span>-rf<span class="w"> </span>Kivy-iOS-XcTemplate/templates<span class="w"> </span>./venv/lib/python3.10/site-packages/kivy_ios/tools/
+rm<span class="w"> </span>-fr<span class="w"> </span>Kivy-iOS-XcTemplate
+
+mkdir<span class="w"> </span>swift-packages
+<span class="nb">cd</span><span class="w"> </span>swift-packages
+curl<span class="w"> </span>https://gist.githubusercontent.com/PythonSwiftLink/eaf7105c371aca42eaf0fd1664b2eeb8/raw/6a3ef62cbcd7c602a6f023f4594cd60d4eea03b5/custom_pythonlib.py<span class="w"> </span>--output<span class="w"> </span>custom_pythonlib.py
+python<span class="w"> </span>custom_pythonlib.py
+git<span class="w"> </span>clone<span class="w"> </span>--branch<span class="w"> </span>testing<span class="w"> </span>https://github.com/PythonSwiftLink/PythonSwiftCore
+rm<span class="w"> </span>-f<span class="w"> </span>PythonSwiftCore/package.swift
+curl<span class="w"> </span>https://gist.githubusercontent.com/PythonSwiftLink/aef31fa04954f2a09644437376756274/raw/6b31763457071851e4ca240589fb2c3bc112b212/package.swift<span class="w"> </span>--output<span class="w"> </span>PythonSwiftCore/package.swift
+<span class="nb">cd</span><span class="w"> </span>..
+
+toolchain<span class="w"> </span>build<span class="w"> </span>kivy
+</pre></div>
+</div>
 <dl class="simple">
 <dt>Like the official kivy-ios statement says:</dt><dd><p>Don’t grab a coffee, just do diner.
 Compiling all the libraries for the first time,
