@@ -715,6 +715,176 @@
 <h2>Api:<a class="headerlink" href="#api" title="Link to this heading"></a></h2>
 <section id="enums">
 <h3>Enums:<a class="headerlink" href="#enums" title="Link to this heading"></a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="camera_api.CameraConfigMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">camera_api.</span></span><span class="sig-name descname"><span class="pre">CameraConfigMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraConfigMode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraConfigMode" title="Link to this definition"></a></dt>
+<dd><p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="camera_api.CameraConfigMode.CoreML">
+<span class="sig-name descname"><span class="pre">CoreML</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#camera_api.CameraConfigMode.CoreML" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="camera_api.CameraConfigMode.PhotoPng">
+<span class="sig-name descname"><span class="pre">PhotoPng</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#camera_api.CameraConfigMode.PhotoPng" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="camera_api.CameraConfigMode.PhotoRaw">
+<span class="sig-name descname"><span class="pre">PhotoRaw</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#camera_api.CameraConfigMode.PhotoRaw" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="camera_api.CameraConfigMode.QRcode">
+<span class="sig-name descname"><span class="pre">QRcode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#camera_api.CameraConfigMode.QRcode" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="camera_api.CameraConfigMode.Video">
+<span class="sig-name descname"><span class="pre">Video</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#camera_api.CameraConfigMode.Video" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="camera_api.CameraConfigMode.Vision">
+<span class="sig-name descname"><span class="pre">Vision</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#camera_api.CameraConfigMode.Vision" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraConfigMode.test">
+<span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraConfigMode.test"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraConfigMode.test" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="camera_api.CameraApi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">camera_api.</span></span><span class="sig-name descname"><span class="pre">CameraApi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#camera_api.CameraApi.Callbacks" title="camera_api.CameraApi.Callbacks"><span class="pre">Callbacks</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi" title="Link to this definition"></a></dt>
+<dd><p>A Wrapper For AVCapture Foundation</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.auto_exposure">
+<span class="sig-name descname"><span class="pre">auto_exposure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.auto_exposure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.auto_exposure" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.select_camera">
+<span class="sig-name descname"><span class="pre">select_camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.select_camera"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.select_camera" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.select_preview_preset">
+<span class="sig-name descname"><span class="pre">select_preview_preset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.String_Bytes.str" title="swift_types.String_Bytes.str"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.select_preview_preset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.select_preview_preset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.set_camera_mode">
+<span class="sig-name descname"><span class="pre">set_camera_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.set_camera_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.set_camera_mode" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.set_exposure">
+<span class="sig-name descname"><span class="pre">set_exposure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.set_exposure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.set_exposure" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.set_focus_point">
+<span class="sig-name descname"><span class="pre">set_focus_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.set_focus_point"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.set_focus_point" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.start_capture">
+<span class="sig-name descname"><span class="pre">start_capture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback_cls</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.start_capture"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.start_capture" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.stop_capture">
+<span class="sig-name descname"><span class="pre">stop_capture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.stop_capture"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.stop_capture" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.take_multi_photo">
+<span class="sig-name descname"><span class="pre">take_multi_photo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.take_multi_photo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.take_multi_photo" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.take_photo">
+<span class="sig-name descname"><span class="pre">take_photo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.take_photo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.take_photo" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.update_view_pos">
+<span class="sig-name descname"><span class="pre">update_view_pos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.update_view_pos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.update_view_pos" title="Link to this definition"></a></dt>
+<dd><p>Send CameraView offset pos to swift class when changed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.update_view_size">
+<span class="sig-name descname"><span class="pre">update_view_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.update_view_size"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.update_view_size" title="Link to this definition"></a></dt>
+<dd><p>Send CameraView size to swift class when changed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.zoom_camera">
+<span class="sig-name descname"><span class="pre">zoom_camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zoom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraApi.zoom_camera"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraApi.zoom_camera" title="Link to this definition"></a></dt>
+<dd><p>Control camera zoom</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="camera_api.CameraApi.Callbacks">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">camera_api.CameraApi.</span></span><span class="sig-name descname"><span class="pre">Callbacks</span></span><a class="headerlink" href="#camera_api.CameraApi.Callbacks" title="Link to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.Callbacks.blit_buffer">
+<span class="sig-name descname"><span class="pre">blit_buffer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#camera_api.CameraApi.Callbacks.blit_buffer" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.Callbacks.get_presets">
+<span class="sig-name descname"><span class="pre">get_presets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#camera_api.CameraApi.Callbacks.get_presets" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.Callbacks.preview_pixel_data">
+<span class="sig-name descname"><span class="pre">preview_pixel_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#camera_api.CameraApi.Callbacks.preview_pixel_data" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.Callbacks.returned_image_data">
+<span class="sig-name descname"><span class="pre">returned_image_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#camera_api.CameraApi.Callbacks.returned_image_data" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.Callbacks.set_camera_texture">
+<span class="sig-name descname"><span class="pre">set_camera_texture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#camera_api.CameraApi.Callbacks.set_camera_texture" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraApi.Callbacks.set_preview_size">
+<span class="sig-name descname"><span class="pre">set_preview_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#camera_api.CameraApi.Callbacks.set_preview_size" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="camera_api.CameraView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">camera_api.</span></span><span class="sig-name descname"><span class="pre">CameraView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraView"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraView" title="Link to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraView.get_image_ratio">
+<span class="sig-name descname"><span class="pre">get_image_ratio</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraView.get_image_ratio"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraView.get_image_ratio" title="Link to this definition"></a></dt>
+<dd><p>_summary_</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>_type_: _description_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="camera_api.CameraView.returned_image_data">
+<span class="sig-name descname"><span class="pre">returned_image_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../documentation.html#swift_types.SignedIntegers.int" title="swift_types.SignedIntegers.int"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/camera_api.html#CameraView.returned_image_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#camera_api.CameraView.returned_image_data" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 </section>
