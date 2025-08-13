@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://github.com/PythonSwiftLink/</loc>
+         <loc>https://github.com/Py-Swift/</loc>
          <lastmod>2025-08-13</lastmod>
     </url>
     <url>
-         <loc>https://github.com/PythonSwiftLink/setup/</loc>
+         <loc>https://github.com/Py-Swift/setup/</loc>
          <lastmod>2025-08-13</lastmod>
     </url>
     <url>
-         <loc>https://github.com/PythonSwiftLink/project/kivy/create/</loc>
+         <loc>https://github.com/Py-Swift/project/kivy/create/</loc>
          <lastmod>2025-08-13</lastmod>
     </url>
     <url>
-         <loc>https://github.com/PythonSwiftLink/wrapper_docs/types/</loc>
+         <loc>https://github.com/Py-Swift/wrapper_docs/types/</loc>
          <lastmod>2025-08-13</lastmod>
     </url>
     <url>
-         <loc>https://github.com/PythonSwiftLink/wrapper_examples/hello_world/</loc>
+         <loc>https://github.com/Py-Swift/wrapper_examples/hello_world/</loc>
          <lastmod>2025-08-13</lastmod>
     </url>
 </urlset>
