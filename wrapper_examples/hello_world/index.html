@@ -11,8 +11,10 @@
         <link rel="canonical" href="https://github.com/Py-Swift/wrapper_examples/hello_world/">
       
       
-        <link rel="prev" href="../../wrapper_docs/types/">
+        <link rel="prev" href="../../wrapper_docs/other_types/">
       
+      
+        <link rel="next" href="../battery_level/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -316,7 +318,7 @@
         
   
   <span class="md-ellipsis">
-    Kivy
+    kivy-project
   </span>
   
 
@@ -337,7 +339,7 @@
         
   
   <span class="md-ellipsis">
-    toml file
+    pyproject-configuration
   </span>
   
 
@@ -398,11 +400,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wrapper_docs/types/" class="md-nav__link">
+      <a href="../../wrapper_docs/other_types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Types
+    type-casting
   </span>
   
 
@@ -435,7 +437,7 @@
             
   
   <span class="md-ellipsis">
-    Wrapper Examples
+    wrapper-examples
   </span>
   
 
@@ -445,7 +447,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            Wrapper Examples
+            wrapper-examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -537,6 +539,90 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../battery_level/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery level
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../device_info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firebase_auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firebase Authentication &amp; Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio_arpeggiator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AudioKit Arpeggiator
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -638,13 +724,10 @@
   <h1>Hello world</h1>
 
 <h2 id="getting-started">Getting started</h2>
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- -->
-
+<p>This tutorial demonstrates how to create a Swift class that can be called from Python using PythonSwiftLink. You'll learn how to wrap Swift code to make it accessible from Python, including passing data between the two languages and implementing callbacks. We'll build a simple HelloWorld class that showcases the fundamental patterns you'll use when bridging Swift and Python code.</p>
 <h2 id="helloworld-part-1">HelloWorld Part 1</h2>
 <p>Call <strong>Swift</strong> from <strong>Python</strong>:</p>
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
-
+<p>Let's start with a basic Swift class that we want to use from Python. This class has a simple method that prints a string to the console.</p>
 <div class="language-swift highlight"><span class="filename">HelloWorld.swift</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kd">init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -657,8 +740,8 @@
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
 </span></code></pre></div>
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
-
+<p>To make this Swift class accessible from Python, we need to add PySwiftKit decorators. The <code>@PyClass</code> decorator marks the class as exportable to Python, <code>@PyInit</code> wraps the initializer, and <code>@PyMethod</code> exposes methods to Python. We also need to define a module structure using <code>@PyModule</code> that lists all the classes we want to export.</p>
+<p>Here's the same class with the necessary wrappers:</p>
 <div class="language-swift highlight"><span class="filename">HelloWorld.swift</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">import</span><span class="w"> </span><span class="nc">PySwiftKit</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">import</span><span class="w"> </span><span class="nc">PySerializing</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">import</span><span class="w"> </span><span class="nc">PySwiftObject</span>
@@ -687,7 +770,8 @@
 </span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">    </span><span class="p">]</span>
 </span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>==</p>
+<p>The <code>@PyModule</code> struct defines a Python module named <code>hello_world</code> that contains our HelloWorld class. The <code>py_classes</code> array lists all classes that should be available in the module.</p>
+<p>Once compiled, this creates a Python module that can be imported and used like any native Python class:</p>
 <div class="language-py highlight"><span class="filename">hello_world.py</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">HelloWorld</span><span class="p">:</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">...</span>
@@ -695,8 +779,7 @@
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">send_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span> <span class="o">...</span>
 </span></code></pre></div>
 <h2 id="helloworld-part-2">HelloWorld Part 2</h2>
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
-
+<p>Now let's explore how to implement callbacks from Swift back to Python. This is useful when you want Swift code to notify Python about events or results. We'll pass a Python function to Swift and call it from within a Swift method.</p>
 <p>Make callback from <strong>Swift</strong> to <strong>Python</strong>:</p>
 <div class="language-swift highlight"><span class="filename">HelloWorld.swift</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">@</span><span class="n">PyClass</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">class</span><span class="w"> </span><span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
