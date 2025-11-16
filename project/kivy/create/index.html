@@ -912,9 +912,16 @@
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>psproject<span class="w"> </span>create<span class="w"> </span>xcode
 </span></code></pre></div>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Copy your main Python file to the Xcode project</p>
+<p>After creating the Xcode project, you need to copy your <code>__main__.py</code> (or main entry point) to the app directory:
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>cp<span class="w"> </span>__main__.py<span class="w"> </span>project_dist/xcode/app/
+</span></code></pre></div></p>
+<p>This file will be bundled with your iOS app and serves as the entry point for your Python application.</p>
+</div>
 <div class="admonition info">
 <p class="admonition-title">To update the xcode project's site-packages, type the following command</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>psproject<span class="w"> </span>update<span class="w"> </span>site-packages
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>psproject<span class="w"> </span>update<span class="w"> </span>site-packages
 </span></code></pre></div>
 </div>
 
