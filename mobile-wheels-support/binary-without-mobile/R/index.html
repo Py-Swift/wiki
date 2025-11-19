@@ -1,0 +1,6450 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Py-Swift/mobile-wheels-support/binary-without-mobile/R/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>Binary Packages Without Mobile Support - R - PySwiftKit Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#binary-packages-without-mobile-support-r" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="PySwiftKit Wiki" class="md-header__button md-logo" aria-label="PySwiftKit Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PySwiftKit Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Binary Packages Without Mobile Support - R
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Py-Swift/PySwiftKit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PySwiftKit Wiki" class="md-nav__button md-logo" aria-label="PySwiftKit Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PySwiftKit Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Py-Swift/PySwiftKit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PSProject
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            PSProject
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    setup-install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    new-project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            new-project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    kivy-project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/cythonized-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cythonized-project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/buildozer-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    buildozer-integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/pyproject-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pyproject-configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    pip / site-packages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            pip / site-packages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/site-packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    managing-packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/local-wheels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    local-wheels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wrapping Swift
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Wrapping Swift
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    type-casting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            type-casting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_docs/standard_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    standard-types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_docs/expanded_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    expanded-types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    wrapper-examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            wrapper-examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/hello_world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello world
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/battery_level/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery level
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/device_info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/open_url_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opening URLs in Safari
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/open_url_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opening URLs in Safari (Module Functions)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/firebase_auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firebase Authentication &amp; Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/audio_arpeggiator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AudioKit Arpeggiator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/uikit_viewcontroller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UIKit ViewController
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mobile Wheels Support
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mobile Wheels Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile-wheels-results/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pure-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pure-python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    binary-without-mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../excluded-packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    excluded-packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="binary-packages-without-mobile-support-r">Binary Packages Without Mobile Support - R</h1>
+<p><strong>Generated:</strong> 2025-11-19 22:36:15<br />
+<strong>Total Packages Starting with R:</strong> 1064</p>
+<p><a href="../">← Back to Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Android</th>
+<th>iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>r-capture</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>r2d2-pal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>r2libr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>r3fit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RaanA</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rabbitsketch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rabo-dev-kit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>racingenv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>racplusplus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radar-bgt60</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radar5</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radbelt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radbsdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radCAD-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RadFiled3D</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radiate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radioactiveshrimp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radius-clustering</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radix-heap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radixtarget</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>radukenlm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raffle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rafina</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raft-dask-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raft-dask-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raftify</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ragbooster</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ragged-buffer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ragout</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raidx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raise-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raknet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raknet-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raksha</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rakun-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ralipyard</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ramage</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rambenchmark</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rameau</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rand-archive</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>randall</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Random-Enemy-Attributes</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>random-events</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>random-insertion</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>random-partition-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>random-test-tool</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>randomgen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>randomstate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RandoRank</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>randovania-lupa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>range-coder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>range-coding-cython</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rangebar</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rankeval</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rankfm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rankfmc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rao</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raphtory</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapid-snapshot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RapidFuzz</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidgeo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidgzip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidhash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidnbt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidquery</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapids-logger</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidsmpf-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidsmpf-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidstats</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidstream-cocotb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidxmltojson</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rapidyaml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raptorq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raptors</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rascpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RASPA2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rasqal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rastafari</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rastafari2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raster</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raster-drone</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rasterio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rat-engine-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ratapi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rateslib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ratio-case</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ratio-genetic-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rational-activations</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rational-linkages</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raudio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raveberry-visualization</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raven-framework</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raw-bcrypt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rawdatafilter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rawdatarinator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rawpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ray</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ray-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ray-delvewheel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ray-for-mars</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raybender</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rayexec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raylib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raylib-drm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raylib-sdl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rayml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raynest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raysect</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raysql</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>raystreaming</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rayx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rb-generator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rbcl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rbdlp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rbdt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Rbeast</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rbloom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rbloom-gcs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rbot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rbox</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rbpodo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rby1-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rc-qlc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rc-robosim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rcdb-unpacker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rchitect</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rchp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rcl-lang</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rclab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rclone-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rclone-bin-edge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rcr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rcssmin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdatacompy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdb-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdbgen-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdetoolkit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdfox</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdiff-backup</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdkit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdkit-data-pipeline-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdkit-mux</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdkit-pypi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdkix</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdkx5-yolo-mapper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdp-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdp2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rdpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rds2py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>re-mocd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>re-patchright</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>re-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>re2c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reachy-mini-cpp-kinematics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reachy-mini-motor-controller</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reachy-mini-rust-kinematics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reacnetgenerator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reactIDR</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reaction-system</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>read-aconity-layers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>read-qrcode</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>readDiag</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>readfish-summarise</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>readfish-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>readibility-plus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ReadIM</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>readme-update</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>readSTDF</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reaf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>real-ladybug</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RealCrypto</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realcugan-ncnn-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realesrgan-ncnn-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realeyes.demographic-estimation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realeyes.emotion-detection</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realeyes.face-verification</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realoot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RealRsa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realsense-align</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realsense-applesilicon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>realsenseid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reasonable</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rebase-migrations</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reboot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reboot-dev-reboot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reboot-resemble</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rebop</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rebound</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rebrowser-playwright</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>recfarm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>recfast4py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RecForest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reckit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reclaimer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reclass-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reco</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>record3d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>recordclass</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>recorder-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RecordFlux</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>recordio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rectangle-08ms</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rectangle-packer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rectools-lightfm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>recursive-split-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redblackgraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reddit-decider</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redefine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redis-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redis-server</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redis-stack-wheel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redis-stream-logger</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redis-wheel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redisdecor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redisearchtables</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redislite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redlibssh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redlibssh2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redner</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redner-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redstork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reduce-binary</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reduced-3dgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reductionml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>redvox-native</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reed-solomon-leopard</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reed-solomon-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reelay</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reese-file-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reese-mysql-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>refact</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>refcuckoo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reflink</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reflink-copy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>refnx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>refrigerant-loader</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reftools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reftrace</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regex-generate-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regex-replacer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regex-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regex-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regex-sampler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regex20200220</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regex2dfa2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regexp-sar</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reggression</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regicide</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regina</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regioncam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regions</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regopy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regreg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regress</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>regressor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rehline</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rei</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reifydb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rekker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relast</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relastii</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relation-graph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relaxed-ik-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relay-bp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relayrl-framework</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relibmss</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relionai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reliq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>relocal-adr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RelStorage</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>remarkable-update-fuse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>remarkable-update-image</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>remoterl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>removedup</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>remsol</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>renameat2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>renamed-opencv-python-inference-engine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rencode</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rencrypt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rene</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>renfe-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>renify</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rensa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rentropy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reoxide</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>repane</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>repaneii</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>repeatfinder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>repeto</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>replana</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>replanaii</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>replay-memory</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>replaytables-andnp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>replicat</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>repo-mapper-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>repoguess</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reponses-validator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>report-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reportlab-eh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reportlab-x</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reportspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reprep-z7</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RePrimAnd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reproject</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reprozip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>repsim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reqboost</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reqsnaked</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>requests-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>requestx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reqwest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reqwest-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rerf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rerun-query</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rerun-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resdata</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Resiliparse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resim-metrics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resim-open-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resim-ros2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resmico</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resp-benchmark</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resp-protein-toolkit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>responses-validator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>restate-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>restbl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>restful.py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>restrained-ESP-fit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>restructuredpython</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resumablesha256</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resvg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resvg-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resvg-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>resvg-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reth-db-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reticula</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retinawhitenoise</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retracesoftware-functional</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retracesoftware-functional-debug</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retracesoftware-stream</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retracesoftware-stream-debug</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retracesoftware-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retracesoftware-utils-debug</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>retracesoftware.stableset</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reuse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reveal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>REVEALER</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reverse-geocoder-whl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reversejp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>revolve2-ci-group</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>revolve2-standards</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rewyr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rex-pycli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>reynir</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RF-Track</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RF24</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rf24-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RF24Network</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rfc3161-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rfcnt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rfernet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rfiletype</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rfnetwork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rfpye</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rfsspec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rfst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rg3py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rgeocoder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rget</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rgf-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rgpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rgrow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rgrow-flood</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rgxx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RHash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rhe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rhetor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rhino3dm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rhoban-cmeel-jsoncpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rhtml2text</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RHVoice</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rhvoice-wrapper-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ri-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>richdem</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>richdem-fork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>richsmi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ridepy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ridge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>riemann-secpy256k1</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rife-ncnn-vulkan-python-tntwise</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>riffq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rig_c_sa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>righor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rignore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ril</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rillrate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rillrate-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rils-rols</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rina-pp-pyb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rindex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rindle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ringlink</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rio-color</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>riot-na</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ripgrep</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ripgrep-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ripser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ripserplusplus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>riptide-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rir-generator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Riskfolio-Lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Riskfolio-XL</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>risktools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ritellm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rithm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ritm-annotation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>riva-asrlib-decoder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rivector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>river</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rivuletpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rjieba</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rjmespath</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rjsmin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rjsonc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rjsonnet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rk-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rk4-sparse-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rknn-inspect</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rknn-toolkit-lite2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rknn-toolkit2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rknpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rko-lio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rl-accel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rl-deploy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rl-env-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rl-language-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rl-renderPM</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlbot-flatbuffers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlbot-lua</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlgym-learn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlgym-learn-algos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlinalg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlmc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rloop</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlottie-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RLPack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlpy3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlsa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlviser-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rlxcrypt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rm-html5-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rm-lines-sys</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Rmath4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmc-discord</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RMextract</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmm-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmm-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmnpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmol</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmount</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rms-fpzip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmsdynautomationtool</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rmskin-builder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rnapykin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rnasamba</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rnet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RNG</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rnl-scikit-learn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rnnoisepy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rnode</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rnzb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ro2ya-mind</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ROA</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roadtrip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roapi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roapi-http</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roaring-landmask</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robinpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robinzhon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roboclaw-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robocorp-action-server</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robodbg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roboflex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roboflex.dynamixel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roboflex.realsense</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roboflex.webcam-gst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robomaster</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roboschool</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robosoc2d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robot-description-builder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robot-package</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotframework-browser-batteries</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotframework-flaui</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotframework-PlatynUI</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotframework-yet-another-ocr-library</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roboticstoolbox-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotmq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotoy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpipe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-adi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-apriltag</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-commands-v1</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-cscore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-ctre</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-hal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-halsim-ds-socket</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-halsim-gui</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-halsim-lowfi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-halsim-ws</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-apriltag</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-datalog</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-ntcore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-romi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-wpihal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-wpilib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-wpimath</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-wpinet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-wpiutil</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-native-xrp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-navx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-pathfinder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-photonvision</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-playingwithfusion</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-rev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-rev-color</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-romi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-urcl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-wpilog</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-wpimath</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-wpinet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-wpiutil</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotpy-xrp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotraconteur</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotslacker-sqlcli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robotter-hummingbot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robust-laplacian</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robust-stats</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>robyn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roc-auc-pairwise</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roc-rap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roc-rpl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rockblock9704</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocker-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocket-fft</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocketcea</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocketmq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocketsim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rockhopper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocksdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocksdb-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocksdb3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocksdict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocksq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rocraters</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rodeo-bufr-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rogtk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rogue-gym</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roksta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roktools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rol-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roll-regression</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rolling-quantiles</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rollnw</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>romanisim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rook</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rookiepy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ropey</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ropey-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ropy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rormula</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-action-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-actionlib-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-cppcheck</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-cpplint</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-export-definitions</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-export-dependencies</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-export-include-directories</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-export-interfaces</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-export-libraries</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-export-link-flags</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-export-targets</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-flake8</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-gen-version-h</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-gmock</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-gtest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-include-directories</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-libraries</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-pep257</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-pytest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-ros</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-ros-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-target-dependencies</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-uncrustify</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-vendor-package</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-cmake-version</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-ament-index-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-builtin-interfaces</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-common-interfaces</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-diagnostic-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-fastcdr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-fastdds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-fastrtps</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-fastrtps-cmake-module</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-foonathan-memory-vendor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-geometry-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-gmock-vendor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-gtest-vendor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-libyaml-vendor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-lifecycle-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-nav-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-pybind11-vendor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-python-cmake-module</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcl-action</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcl-interfaces</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcl-lifecycle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcl-logging-interface</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcl-logging-spdlog</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcl-yaml-param-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rclpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcpputils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rcutils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw-dds-common</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw-fastrtps-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw-fastrtps-shared-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw-implementation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw-implementation-cmake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw-security-common</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw-test-fixture</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rmw-test-fixture-implementation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosgraph-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-adapter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-cmake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-core-generators</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-core-runtime</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-default-generators</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-default-runtime</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-dynamic-typesupport</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-dynamic-typesupport-fastrtps</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-generator-c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-generator-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-generator-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-generator-type-description</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-runtime-c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-runtime-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-typesupport-c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-typesupport-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-typesupport-fastrtps-c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-typesupport-fastrtps-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-typesupport-interface</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-typesupport-introspection-c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-rosidl-typesupport-introspection-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-sensor-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-service-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-shape-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-spdlog-vendor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-std-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-std-srvs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-stereo-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-test-interface-files</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-test-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-tracetools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-trajectory-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-type-description-interfaces</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-uncrustify-vendor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-unique-identifier-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros-visualization-msgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ros2-tui</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rosalind-pyo3-maturin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rosco</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roseau-load-flow-engine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rosia</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rostpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rosu-pp-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rotary-emb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rotary-emb-unofficial</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rotary-encoder-gpio-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rotel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rotki-pysqlcipher3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rotki-sqlite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rotpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rottnest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rouge-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rougek</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RoughPy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>round2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>routingblocks</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>routingkit-cch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>routrie</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>routrs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>routx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>roy-on-ray</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpaudio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpcap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpds-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpeasings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpg-map</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpgp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpgPy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpi-derive-key</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpi-torch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpi-torchvision</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RPi.GPIO</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpi3.torch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpki-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpm-inspector-rpm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rportable</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rportable-docs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rportable-i386</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rportable-x64</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rppxml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpsl-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpy2-rinterface</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpycocotools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rpze</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rqctp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rqdatac</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rqfactor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rql</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rqpattr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rqpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rqrcode</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rqtreemesh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rr-infinigen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rraft-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rregex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rrplugins</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rrule</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rrule-fork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-audio-stats</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-bpe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-bytepiece</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-chardet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-csv-reader</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-czsc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-distances</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-document</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-fast-one-hot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-fec-conv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-ncmpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-parsepatch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-tabler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-vector-db</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs-versions</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs1090</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rs2py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsatomic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsatoolbox</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsbids</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsbio-seq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsbrowsers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rscad</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rscase</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rscheduler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsdos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsequence</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rshare</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rshelper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsilk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsjwt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rskeyring</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rslattice</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsmarkov</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsmime</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsmorphy-lemmatizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsnapsim-ssa-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsoup</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsplitter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rspolib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rspx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rspy-chess</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rspy-utilities</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rspyai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rspybridge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsr45-dual-autodiff-x</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rssdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rstar</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rstar-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rstypes</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsutil</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rsvidx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtd-common</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtde-ur</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtea</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtf-tokenize</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtfcre</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rthon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rti.connext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtloc-manager</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtmidi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtmidi2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtmixer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RTModel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtmp-streaming</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtn-simrs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtok</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtoml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtp.io</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtpsynth</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtreecpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rts-smoother</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rttbackend</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtvamp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rtxpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruamel.ordereddict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruamel.yaml.clib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruapu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rubato</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rubelp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rudof</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rudradb-opin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruff</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruff-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruff-format</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rugo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rule30py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruleopt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rumdl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runai-model-streamer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runai-model-streamer-gcs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runai-model-streamer-s3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runai-streamer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runai-streamer-s3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rundec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runkmc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runmetal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runno</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>runstats</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RunUp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruprof</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruptura</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruptures</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruquests</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruranges</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rure</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusaint</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusev-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusmppyc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruson</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruspectroscopy-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusql2py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>russh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>russhy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-add-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-annie</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-arenaclient</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-category</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-chart-generator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-circuit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-code-analysis-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-common-sub-str</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-csv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-dfs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-dtw</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-dwarf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-encoding</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-ephem</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-extern</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-fastdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-fastql</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-fatigue</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-ffi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-fst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-geo-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-graph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-image-hash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-itertools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-just</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-loader</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-macs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-mahjong</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-markdown-text-puller</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-matchspec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-metaplex-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-neighborlist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-nurbs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-packer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-paillier</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-pgn-reader-python-binding</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-poly</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-py-tools-d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-pyfunc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-pyo3-timeseries</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-pypi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-pypi-example</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-pyspec-glue</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-python-jaeger-reporter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-python-jsonpatch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-python-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-python-linter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-q</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-range</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-regex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-requests</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-reversi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-sasa-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-silence</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-simulation-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-statespace</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-strings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-timeseries</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-tokenizer-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-tokenizer-sober</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-udf-example</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-vocab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust-x3dh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust_demangle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust_neotools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rust_sbml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustac</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustaddermaturin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustafarian</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustalib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustautogui-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustbag</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustbam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustberry</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustbin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustcord</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustcsv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustdef</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustdict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusterize</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustface</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustflight</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustflow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustfluent</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustfrc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustfrecord</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustfs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustfst-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustga</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustgi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustgression</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustgrok</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Rusthonian</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusticfs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusticsoup</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustil</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustileo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustinho</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustique</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustitude</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustlens</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustlets</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>RustMann</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustmapper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustmath</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustmfx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustmodels</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustmssql-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustoken</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustoml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustpam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustpy-toolkit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustpy-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustpy-xlsxwriter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustpycoils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustpyppr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustpython-ast-pyo3-wrapper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustquant</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustrees</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustregression</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustrict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustsat</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustshogi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruststartracker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustup</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustup-init-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustvdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustworkx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustxes</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-anc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-capacitance-model-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-chrono</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-dawg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-di-runner</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-email-validator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-graph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-img-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-logger</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-manga-image-translator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-orbital-dynamics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-polygon-geohasher</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-py-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-req</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-rlp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-runways</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-sieve</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-tags</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-todo-md</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-tree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-validator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-wizard</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusty-zip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustyaml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustybt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustycalc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustychickpeas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustyfim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustyfresh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustymimi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustyms</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustynum</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustypdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustypot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustyrs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustyssim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustytables</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rustyter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rusvm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruuid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ruuid4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rvctesta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rvctestb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rvn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rvnllm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rwkv-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rwkv-tokenizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rwkv2onnx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rws-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rxctl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rxing</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rxml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ry</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ryaml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ryan-lang</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ryayoung-util</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ryl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rytest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rython-calc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ryugraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rz-bindings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>rz-bindings-jeng</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a href="../">← Back to Index</a></p>
+<p><strong>Generated by:</strong> <a href="https://github.com/Py-Swift/MobilePlatformSupport">MobilePlatformSupport</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>

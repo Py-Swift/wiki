@@ -1,0 +1,7820 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Py-Swift/mobile-wheels-support/binary-without-mobile/C/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>Binary Packages Without Mobile Support - C - PySwiftKit Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#binary-packages-without-mobile-support-c" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="PySwiftKit Wiki" class="md-header__button md-logo" aria-label="PySwiftKit Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PySwiftKit Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Binary Packages Without Mobile Support - C
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Py-Swift/PySwiftKit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PySwiftKit Wiki" class="md-nav__button md-logo" aria-label="PySwiftKit Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PySwiftKit Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Py-Swift/PySwiftKit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PSProject
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            PSProject
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    setup-install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    new-project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            new-project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    kivy-project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/cythonized-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cythonized-project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/buildozer-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    buildozer-integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/pyproject-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pyproject-configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    pip / site-packages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            pip / site-packages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/site-packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    managing-packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/local-wheels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    local-wheels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wrapping Swift
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Wrapping Swift
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    type-casting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            type-casting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_docs/standard_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    standard-types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_docs/expanded_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    expanded-types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    wrapper-examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            wrapper-examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/hello_world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello world
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/battery_level/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery level
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/device_info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/open_url_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opening URLs in Safari
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/open_url_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opening URLs in Safari (Module Functions)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/firebase_auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firebase Authentication &amp; Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/audio_arpeggiator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AudioKit Arpeggiator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/uikit_viewcontroller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UIKit ViewController
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mobile Wheels Support
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mobile Wheels Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile-wheels-results/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pure-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pure-python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    binary-without-mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../excluded-packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    excluded-packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="binary-packages-without-mobile-support-c">Binary Packages Without Mobile Support - C</h1>
+<p><strong>Generated:</strong> 2025-11-19 22:36:15<br />
+<strong>Total Packages Starting with C:</strong> 1338</p>
+<p><a href="../">← Back to Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Android</th>
+<th>iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c104</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>c2048</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>c2dcczp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>c2f</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>c2pa-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>c3py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CaChannel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cachebox</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cached-interpolate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cached-ipaddress</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cacheme-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cadbiom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caddy-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caddy-bin-edge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caddyserver-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caddysnake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cadnano</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cadquery-ocp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cadquery-ocp-arm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cadquery-ocp-arm-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cadquery-ocp-novtk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cadquery-vtk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caf-ai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cairo-python-bindings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cairo-rs-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cait-sith-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caj2pdf-restructured</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cajal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calamine-tablib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calc-pi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calc-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calco</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calcos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calculatex-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calculator-wrapper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calico-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calimero-client-py-bindings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>callchain-checker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>callisto-watchdog</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calzone</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>calzone-display</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cam_distort</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>camb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>camel-kenlm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>camel-lang</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>camembert-bri</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cameo-ocean</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>camera-intrinsic-calibration</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>camerata</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>camfr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>camille</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>can-ada</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>can-message-data-generator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>can-viewer-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>canadafire</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candiy-lemon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candle-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candle-bert</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candle-bus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candle-driver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candle-llm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candle-nn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candle-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candlesdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>candy-DynamicNetworks</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>canns-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>canns-ripser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>canonicaljson-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cantact</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cantera</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>canvas-painter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cao-lang</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cap-gen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capara</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capcruncher-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capnhook-ml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capnpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capstone</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capstone-gt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capsule-manager-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>captcha-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>captchax</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capthalline</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caption-project</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capypdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>capytaine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caqtus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caqtus-parsing</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caravan-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>carbem-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>carbon-index</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>carbonara-pyvex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CarbonX</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>carefree-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-ament-build</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-deb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-deny</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-generate-rpm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-insta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-lambda</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-xwin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-xwinbuild</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cargo-zigbuild</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>carla</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>carla-client-unofficial</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>carmapy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>carolina</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cars</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cars-filter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cars-rasterize</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cars-resample</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cartesian-tree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cartonml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cartonml-nightly</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Cartopy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cas-python-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casa-formats-io</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casadi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casadi-gil-comp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casadi-horizon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casadi-kin-dyn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casafeather</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casalogger</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casaplotms</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casaplotserver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casatablebrowser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casatelemetry</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casatools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casaviewer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cascading-upper-bounds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cascadio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cascata</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>casers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cashflower</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cassandra-driver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cassie</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cast6ecb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>castxml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>catboost</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>catboost-dev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>catboost-no-sse4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>catdict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>catelier</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>caterva</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cathay-trade</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>catsmoothing</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>catwoman</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>catzilla</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>causal-hub</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>causal-tree-learn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>causalkit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>causalml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cavd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cavint</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cavro</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cb85</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbase64</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbbs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbcpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbgen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CBGT</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbitmap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbits</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbitstruct</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbor-diag</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbors</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbvx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cbytesparse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cccgpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ccdexplorer-schema-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cchardet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cchecksum</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ccmap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ccnet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ccore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ccplot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ccrypt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ccsds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cctbx-base</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ccv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdbx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdcmis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CDEF</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-andreas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-annsophie</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-lone</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-maj</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-pi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-pi-version2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-tobias</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-tobias-version2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-tobias-version4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-tobias-version5</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-analysis-plugin-tobias-version6</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-fam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-epi-rs-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-fam-study</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-190625</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-190625-1</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-190625-2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-200625</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-230625</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-230625-1</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-240625</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-240625-1</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-250625</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-250625-1</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-250625-multicsv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-250625-nowide</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-250625-opt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-250625-refactored</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-260625</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-260625-1600</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-260625-1740</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-260625-canon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-260625-tables</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-almost</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-my-fav</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-study</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-study-one</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-study-one-pop</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-population-tobias</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-scd-matching-plugin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-scd-matching-polars-plugin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-scd-matching-polars-plugin-toby</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdef-tkragholm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdiffer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdifflib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdjs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdl2r</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdlake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdncheck</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdot-tree-sitter-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CDPKit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdshealpix</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cdsl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cea-external-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ceccomp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cedarpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cedarpy-conversor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cedula-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cef-capi-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cefpython3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cefpython3-for-python-3.8.10-unofficial</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cefpython3-for-python-3.9.6-unofficial</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cefpython3-v66.1-for-python-3.10.2-unofficial</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cel-bind</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>celer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>celerite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>celerite2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>celery-exporter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>celiagg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>celldect</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cellmap-analyze</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cellulist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>celux</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cengal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cengal-light</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>centaurs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>centrosome</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ceODBC</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cephes4py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ceramatch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cerebras-appliance</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cerebras-pytorch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cerebras-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cereggii</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cerelink</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ceresdb-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cerializer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>certbot-dns-multi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>certbot-onion</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>certitude</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>certmonitor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cesium</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cev-metrics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cexprtk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ceylon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ceylon-ai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cf-forked-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cf-units</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cfastblf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cfastrank</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cfelpyutils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cffi-demo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cffsubr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cflinkcpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CFML</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cfn-guard-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cfnmatch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cfnv1a</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cfractions</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cfsem</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cftime</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cftime-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cg-vrp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgal-bindings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgal-pybind</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgbind</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgcpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgn-ec-rust-parsers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgrad</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CGRtools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgrtools-stable</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cgt-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chachax</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chaco</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chafa.py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chafe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chaine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chainlibpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chainlit-mardonio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chainner-ext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chainopy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chainql</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chainsaddiction</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chalc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chalkdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chamfer-metal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>changeforest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>changeforge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>changelogging</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>changenog</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>changepacks</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>changepoint</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>changepoint-cython</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>changtianml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chanoma</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chaps-lzf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>charabia-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chardetng-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>charidotella</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chariot-ds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>charliecloud-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>charm-crypto</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>charm-gems</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>charm4py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CharPyLS</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>charz-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chasing-targets-gym</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chatlogger-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ChatRoom-jianjun</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chd-rs-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chdimage</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Cheb3D</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chebtools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cheby</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chebyfit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>check-config</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>check_x224</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>checksum-dict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cheesecloth</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cheetah-spi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Cheetah3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Chem-Atom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chemaxon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chemfiles</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chemfp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chemfst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chemivec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chemtensor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cherab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cherab-imas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cherab-lhd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cherab-nagdis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cherab-phix</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cherab-solps</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cherry-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cherryml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chesslib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chest-form-api-endstone</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chexutil</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chgnet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chi2comb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chi2sim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chia-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chia-wallet-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chiabip158</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chialisp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chiapos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chiavdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chibihash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chidori</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chik-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chik-wallet-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chikbip158</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chikpos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chikvdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chilkat</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chilkat2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CHILS</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chily</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ChimeraX</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chinese-chess-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chinilla-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chinillabip158</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chinillablspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chinillaclvm-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chinillaclvm-tools-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chinillapos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chinillavdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CHIP-IO</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chipa-ta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chipdriver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chipgr8</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Chips-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chiral-bindings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chloryne</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chmpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cholespy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chompack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chompjs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chonkie</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chopcal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chord-chart</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>choreo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Chorus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chroma-hnswlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chromadb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chromin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chromiumhtml2pdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chromo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chromobius</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ChromoPhyloGen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chronogram</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chronopt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chronowords</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chronoxtract</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chrontext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chrs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chturne-easysnmp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chunk-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chunspell</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chython</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chython-synplan</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chytorch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>chytorch-synplan</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cibuildwheel-autopypi-example</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cibuildwheel-autopypi-example-mayeut</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cicd-tbd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Cielab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cietools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ciflypy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cigsegy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cijak</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ciles</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cimageio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cinderx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cinrad</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ciostream</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ciphercore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cipheycore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>circe-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>circle-detection</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>circlejerk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>circt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>circuit-compiler-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>circuit-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cirkel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cirque-pinnacle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cisco-radkit-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cisco-radkit-common</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cisco-radkit-genie</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cisco-radkit-service</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ciso</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ciso8601</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ciso8601-wheels</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cisraeliqueue</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>citiespy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>city-of-gold</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cityhash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cityseer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cjieba</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cjson-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cjvalpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ckdl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ckitoolz</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ckmeans</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ckwrap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ckzg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CL3d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clade</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clairql-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clang-format</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clang-tidy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clangd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clangTooling</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clara-imaging-algos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clara-viz-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clarabel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clarifai-protocol</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>class-7zip-arch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>class-tree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>classicML</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>classification-library</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>classinet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>classy-community</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>classy-sz</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>claude-agent-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>claude-code-analytics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>claude-logging</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Clawpack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clcat</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cld3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clean-sqlalchemy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clearbox-sure</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clearbox-synthetic-kit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clease</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cleora</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clevercsv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clickhouse-cityhash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clickhouse-connect</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clickhouse-connect-demo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clickhouse-driver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clickhouse-toolset</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clickhouse-toolset-extras</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clicknium</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CLICopti</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>climax-rfglab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>climt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clingcon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clingo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clingo-dl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clingo-lpx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clipper-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clipspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cliquematch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cliquepicking</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cliquest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clireg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clirk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloaca-postgres</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloaca-sqlite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloaked-ai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clode</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clonify-antibody</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>closest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>closing-flow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloth-simulation-filter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Clothoids</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloud-identification</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudmodel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudproof-aesgcm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudproof-anonymization</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudproof-ecies</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudproof-fpe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudpub-python-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudrail-terraform-0-12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudrail-terraform-0-13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudrail-terraform-0-14</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudrail-terraform-0-15</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudrail-terraform-plugins</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudsat-object-manipulation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudtik</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cloudViewer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clovers-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clp-ffi-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clstm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clustalo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ClustAssessPy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cluster-shapley</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clusterfusion</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clustrous</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clvm-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>clvm-tools-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cm-tpm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmaboss</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmake-odidev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CMakeCatchTemplate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmappertools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmarkgfm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmblensplus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmditch-pyscip-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-assimp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-autoconf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-automake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-boost</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-casadi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-casadi-kin-dyn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-cddlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-clp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-coinutils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-console-bridge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-cppad</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-example</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-gettext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-gklib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-glpk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-glslang</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-gmp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-gperf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-help2man</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-hwloc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-lapack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-libdrm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-m4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-metis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-mim-solvers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-mpc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-mpfr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-octomap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-omniorb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-omniorbpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-openblas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-qhull</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-qpoases</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-spirv-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-teaser-plusplus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-texinfo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-tinyxml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-tinyxml2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-urdfdom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-yaml-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmeel-zlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CMGDB</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cminpack-numba</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmlibs.zinc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmm-16bit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cms_enhance</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmsgpack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmsis-pack-manager</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmsisdsp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmsketch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cmtj</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cnc-api-client-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cnest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cnkalman</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cntk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cntools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cntracer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cnv-from-bam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coacd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coal-library</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cobs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cobs-index</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cobs-reloaded</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CocCocTokenizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coco-experiment</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cocoindex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cocoindex-code-mcp-server</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cocotb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codac</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codac4matlab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codde-protocol</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codde-protocol-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>code-data-share</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>code-data-share-for-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>code-intelligence</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>code-nav-devon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>code-navigation-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>code-splitter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>code2prompt-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codeapi-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codecov-ribs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codecov-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codecs7z</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codegen-sdk-pink</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CodeIntel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codemp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codenav-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coderzyqin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codesnap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codespan-reporting</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codetracer-python-recorder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codex-apply-patch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codex-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codex-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codex_native</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codon-compiler-demo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>codpydll</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coffe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cog3pio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cogent</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cognihub-pygotemplate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cognite-kuiper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coho</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coilpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coin-skein-hash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coincurve</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coinor.dippy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coinwagon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colcon-cargo-ros2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coldatoms</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colesbury-c-extension</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colibri-stateless</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colibricore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>collresolve</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colmena-ai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colmpc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colonoscopy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coloquinte</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>color-operations</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>color-palette-extract</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>color-parser-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>color-terminal-objc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colorcode</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colorgram-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colorgram-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colorizer-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colorpicker-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colorsaurus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colorsnip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>colourtime</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>columnq-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>combigeo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>combin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>combina-cpp-and-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>combineArrays</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>combstruct2json</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>comet-emu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>commandt.score</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>committed</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>common-cmplr-lib-rt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>common-cmplr-lic-rt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>common-expression-language</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>common-robotics-utilities</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>commonfate-access-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>commonroad-clcs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>commonroad-drivability-checker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>commonroad-path-toolkit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>commonroad-reach</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>comoneo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compare-reads</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compas-cgal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compas-libigl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compas-shapeop</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ComPDFKitConversion</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compdismatter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compiled</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compiled-knowledge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compiler-gym</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compintpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>complate-cpp-for-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>complexaudio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>complexint</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>complexipy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compmake-z7</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compmech</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compnal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>componentize-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>comportlist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-api-dev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-cli-dev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-core-dev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-dev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-ray-dev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-train</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composabl-train-dev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compose-go</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compose-score</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>composites</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compreffor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compress-utils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compressai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compressed-image</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compressed-segmentation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compresso</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>compushady</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>computations-library</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>computing-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>comrak</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>comrak-ext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conada-puzzles</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conan-exoplanet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>concave-hull</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>concept-x-converter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>concrete-compiler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>concrete-ml-extensions</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>concrete-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conda-build-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>condat-gridconv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>condeltri</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>condorcet-domain</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>condreg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conecta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coneref</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conetwork-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>confido-atls</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>config-lang-serder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>config-server</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>configcrunch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>configparserc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>confluent-kafka</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>confseq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coniferest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coniii</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ConMorph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>connect-four-ai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>connected-components-3d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>connectorx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conner</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Connnet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conrich</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conseal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>consenrich</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conspire</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>constriction</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>contamxpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>contexta-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>contracting</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>contrast-agent</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>contrast-agent-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>contrast-fireball</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>controller-management-base</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Controllers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conventionalrp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>convertbng</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>convertertools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>convex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>convlog-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>convolutionalfixedsum</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>convtools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>conway-life</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coocoo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cookiecutter-cruft-poetry-tox-pre-commit-ci-cd-instance</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cookiecutter-rustpython</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CoolProp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coolpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cooppush</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coordinate-system</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coordinationz</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>copclib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>copilot-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>copilot-bin-edge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>copium</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coppice</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coptpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coptrs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>copulae</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>copyforward</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>copykitten</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coqui-stt-ctcdecoder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coralsnake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>core-universal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>core-universal4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coredis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coreforecast</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coreir</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coremltools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coremltools_windows</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coremusic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corenn-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coreset-sc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coresets</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corgea-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coriolis-eda</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cornac</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cornflakes</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corolab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corpus-dispersion</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corpus_processor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corpusit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>correctionlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>correl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>correlation-integral</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>correlation-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corrosiffpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>corvic-engine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cos-aspera</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosbr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmian-kms</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmian-py-ggml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmic-popsynth</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmic-profiles</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmic-sardine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmic-shapes</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmic-text-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmodoit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmol-viewer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmolopy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmos-xenna</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CosmoSim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosmotool</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosy1</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cosymlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cotengrust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cothread</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cotipywhispercpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cotton2k.core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>couchbase</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>couchbase-columnar</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>couchbasepypdu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cougar</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>count-distinct</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>count-min-sketch-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coupled-cluster-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coursemap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cover-crypt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coverage-control</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coverforest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>covers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>covet-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>covid19-model</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>covid_sim_rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>covpred</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>coxdev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cozo-embedded</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cp-pyflink</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpecs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpgparser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cplex</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpnest</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpop</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-binance-orderbook</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-chunker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-containers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-demangle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-demangle2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-hf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-meraki</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-package-for-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-tiff</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpp-zarr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppbinder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppbktree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppbuiltins</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppcheck</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppinyin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppjieba</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppjieba-py-dat</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpplib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpplibrary</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpprb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppstd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpputils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppyabm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppyml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cppyy-cling</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpr-gym</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cprotobuf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cprotobuf-lc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cprs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpufeature</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpuid-native</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpupower</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpydemo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cPyExtPatt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpyImagingMSpec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpylib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpymad</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpyMSpec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpyMSpec-0-3-5</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpyne</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cPyparsing</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpyprocess</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpyquickhelper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpython-near-wasm-opt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cpython-package-stepbystep</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cqdm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cqi-rl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cql2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cqlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cr-bayesian-optim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cr-mech-coli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cr-trichome</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crabflow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crabpack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crabparser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crabtree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crackers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crackle-codec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CRADLE</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>craftground</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cral</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cramjam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cramjam-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cRandom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cranelift-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crapdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crappy-python-multitasking</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crate2bib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cratermaker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>craytraverse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crc32c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crc64fast</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crcc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crcmod-plus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crdp-gcp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crdp-gcr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cre</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>createrepo-c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>credis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>creme</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>creversi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crf-beam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crfpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crfs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crfsuite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cribo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cribtools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crick</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crijndael</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crimm-dock</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cripser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crispr-bean</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crisscross-kit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crlibm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crlite-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cro3n</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>croaring</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crockford32</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crocoddyl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cronexpr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>croniters</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>croquis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crosci</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crossandra</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CrossCat</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crosscorr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crossdeploy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crosshair-tool</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crosslab-aiortc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crosspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crsplus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crunch64</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crush</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crustyfuzz</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crymon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryo-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryosparc-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryostasis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypt-guard</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptatools-python3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptcrro</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptg-anyos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptg-binary</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypto-contract-value</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypto-cpp-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypto-crawler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypto-fate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypto-markets</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypto-msg-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypto-pair</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crypto-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptoauthlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptofeed</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptomatte-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptomite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cryptopyx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CryptoSqlite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>crystal-torture</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cs2-nav</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csankey</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csdt-stl-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cSED</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CSF-3DFin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csgimu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csgo-demoparser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csharpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cshogi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csiphash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csiphash24</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csiread</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csiro-spectral-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cskipdict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csm-openbabel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csodium</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csortedintencode</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cspeech-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cspyce</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>css-inline</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cssfinder-backend-numpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cssfinder-backend-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cstgs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cstrlbg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csu-radartools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csv-gp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csv-validate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csv-validation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csvlogcleaner</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csvmorph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csvs-convert</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>csvtype</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CT3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctc-decoders</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctcdecoder</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctea</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctextlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctfcli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctfr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctlog</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctoybox</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctp-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctpbee-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CtpPlus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctransformer-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctranslate2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctrlb-heimdall</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctrlutils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctseval</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctxproc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ctxseg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cualgo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuatrorpc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubao-cmake-example</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubao-pybind</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubao-tippecanoe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubature</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cube-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cube-solver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubik</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubing-algs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubinlinker-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubnm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubrid-db</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cubrif</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cucim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cucim-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cudensitymat-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cudensitymat-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cudensitymat-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cudf-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cudf-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuequivariance-ops-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuequivariance-ops-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuequivariance-ops-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuequivariance-ops-jax-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuequivariance-ops-jax-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuequivariance-ops-torch-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuequivariance-ops-torch-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuequivariance-ops-torch-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cufinufft</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuik-molmaker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumatfuse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuml-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuml-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu102</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu111</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu113</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu114</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu116</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu117</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu118</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu120</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu121</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu122</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu124</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu126</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumm-cu128</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cumulonimbus-models</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cupauliprop-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cupauliprop-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cupdlpx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuplcodec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cupoch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuquantum-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuquantum-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuquantum-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuquantum-python-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuquantum-python-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuquantum-python-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>curated-tokenizers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>curies-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>curl-cffi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>curl-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>curlIO</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>curlyboi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Curp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>curved</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cusingler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>custatevec-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>custatevec-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>custatevec-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>custom-wkt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cut-pursuit-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutadapt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutde</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cute-light</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutensor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutensor-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutensor-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutensor-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutensornet-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutensornet-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutensornet-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutesy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutlery</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cutters</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuTWED</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cuvis-il</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cv-algorithms</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvc4-solver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvc5</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvc5-gpl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvedia</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvgl-data</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvldoc-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvmltools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvproc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvqp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvtk-release</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvxopt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvxpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cvxpy-base</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cwa-reader-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cwb-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cwcwidth</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cwtch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CWTPy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cx-Freeze</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cx-Logging</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cx-Oracle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cx-Oracle2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cxglearner</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cxnetwork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cxrandomwalk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cxx-image-io</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cxxtea</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cxzip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cy-nutmeg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cy-root</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyac</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Cyanodbc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyanure</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyares</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyberx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cybooster</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyborgdb-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cybotrade</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cybotrade-datasource</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cybotrade-indicators</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cycahvore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyclicbm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyclonedds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyclonedds-nightly</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cycpd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cycurl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cydifflib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cydrogen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CyEulerBallistic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CyFES</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyflashtext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyged</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cygl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cygraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cygrid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cygv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyhilbert</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyhunspell</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyhunspell-py310</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cykooz.heif</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cykooz.rehash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cykooz.resizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyksuid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyleb128</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cylimiter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cylindra</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cylp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyluhn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cymem</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyminhook</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyminiball</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cymorph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cymorton</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyndilib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cynes</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cynetdiff</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyobj</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyp-quantum-circuit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cypari</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cypari2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cypcap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cypher-guard</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyrandom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CyrilAlpha</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CyRK</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyscs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyseq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cysgp4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cysignals</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cysimdjson</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>CyStack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cysystemd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-bbox-fix</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-bbox-og</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-bbox-windows</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-blas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-chess</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-construct</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-demo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-extensions-sc2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-fortran-file</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-indicators</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-package-stepbystep</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-packages</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-pocketfft</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-pure-python-package</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-test-exception-raiser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-vst-loader</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cython-xinput</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cythonarrays</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cythonbiogeme</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cythonconst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cythonized-ta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cythonKC</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cytimes</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cytnx-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cytoflow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cytolk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cytotransform</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cytriangle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyvcf2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cyvincenty</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>czelta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>czipdec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>cZipDecrypter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>czkawka</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>czv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a href="../">← Back to Index</a></p>
+<p><strong>Generated by:</strong> <a href="https://github.com/Py-Swift/MobilePlatformSupport">MobilePlatformSupport</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>

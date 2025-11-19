@@ -1,0 +1,3840 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Py-Swift/mobile-wheels-support/binary-without-mobile/O/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>Binary Packages Without Mobile Support - O - PySwiftKit Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#binary-packages-without-mobile-support-o" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="PySwiftKit Wiki" class="md-header__button md-logo" aria-label="PySwiftKit Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PySwiftKit Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Binary Packages Without Mobile Support - O
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Py-Swift/PySwiftKit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PySwiftKit Wiki" class="md-nav__button md-logo" aria-label="PySwiftKit Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PySwiftKit Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Py-Swift/PySwiftKit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PSProject
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            PSProject
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    setup-install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    new-project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            new-project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    kivy-project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/cythonized-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cythonized-project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/buildozer-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    buildozer-integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/pyproject-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pyproject-configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    pip / site-packages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            pip / site-packages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/site-packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    managing-packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/local-wheels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    local-wheels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wrapping Swift
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Wrapping Swift
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    type-casting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            type-casting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_docs/standard_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    standard-types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_docs/expanded_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    expanded-types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    wrapper-examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            wrapper-examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/hello_world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello world
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/battery_level/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery level
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/device_info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/open_url_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opening URLs in Safari
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/open_url_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opening URLs in Safari (Module Functions)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/firebase_auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firebase Authentication &amp; Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/audio_arpeggiator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AudioKit Arpeggiator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/uikit_viewcontroller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UIKit ViewController
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mobile Wheels Support
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mobile Wheels Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile-wheels-results/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pure-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pure-python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    binary-without-mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../excluded-packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    excluded-packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="binary-packages-without-mobile-support-o">Binary Packages Without Mobile Support - O</h1>
+<p><strong>Generated:</strong> 2025-11-19 22:36:15<br />
+<strong>Total Packages Starting with O:</strong> 542</p>
+<p><a href="../">← Back to Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Android</th>
+<th>iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>o11y</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>o3iss</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>o3json5</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>o3rg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OApackage</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oasis-deconv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oasislmf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oasvalidator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oasys-srwpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oasysdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oat-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>objconpython</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>object-storage-proxy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>object-store-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>object-store-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>objective-lol</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>objective-speech-metric</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>objectscale-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>obliquetree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oblv-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>obrewin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>obsolete-cryptography</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>obspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>obstore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oc-declare</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>occpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocdiff</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocdscardinal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocdsmerge-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocebuild</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocl-tool</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oclgrind-binary-distribution</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocp-vtk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocr-stringdist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocrd-fork-pycocotools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocrd-fork-pylsd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ocrscreen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oct-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>octdata4python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>octicons-pack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>octo-deco</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OctoBot-Channels</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OctoBot-Tulipy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>octomap-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>octosql-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odbc2orm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odclib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oddity</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odin-stream</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odmrawpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odoo-isabel-connect</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odri-control-interface</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odrive</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odrive-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odrpack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odysee</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odyssey-posbus-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>odysseyhubclient</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oead</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oelf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>offline-translator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ofire</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ofrak</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ogdf-wheel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ogn-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ognibuild</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ogr-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ogre-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ogs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ohmyfpg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ohpygossh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ohttpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oidfpolicy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oidn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oiio-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oiio-static-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oilspillsim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oineus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oiseau</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ok-script</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>okab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>okada</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>okada-wrapper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oknlp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>okutils</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oliver-codegen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>olo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omdev-cext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omdev-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ome-metadata</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omextra-cext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omfiles</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omga-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omicsone</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omicsone-data</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omicsone-diff</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omicsone-meta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omicsone-volcano</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omikuji</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omikuji-fast</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omim-pygen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omim-pykmlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omim-pylocal-ads</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omim-pymwm-diff</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omim-pysearch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omim-pytracking</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omim-pytraffic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omlish-cext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ommlds-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ommx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omnara</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omni-camera</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omniback</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omniblack.ariadne</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omniclip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omnicom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omnicon-genericddsengine-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omnicreader</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omnineuro</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omniorb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omniorb-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omniregress</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>omnisoot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ompl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ompl-thin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OMSens</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onceuponai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oncodrivefml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ondamonitor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneagent-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneccl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneccl-cpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneccl-cpu-devel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneccl-devel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-cpu-gomp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-cpu-iomp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-cpu-tbb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-cpu-vcomp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-devel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-devel-cpu-gomp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-devel-cpu-iomp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-devel-cpu-tbb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onednn-devel-cpu-vcomp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onedpl-devel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneflow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-devel-sycl-distributed-dft</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-license</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-blas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-datafitting</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-dft</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-distributed-dft</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-include</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-lapack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-rng</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-sparse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-stats</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onemkl-sycl-vm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onepassword-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onepitranslator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneqloud-polynomials</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneroll</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onert</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oneseismic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onig</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onigurumacffi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onion-py-bindings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onionmaker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>online-changepoint-algorithms</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnx-extended</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnx-simplifier</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnx-weekly</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnx2bnn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxoptimizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-azure</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-cann</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-coreml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-directml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-genai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-genai-directml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-genai-directml-ryzenai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-genai-winml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-migraphx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-noopenmp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-openmp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-openvino</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-powerpc64le</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-qnn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-rocm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-silicon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-training</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-training-cpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime-webgpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxruntime_extensions</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxsim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxsim-no-ort</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>onnxsim-prebuilt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ont-koi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ont-mappy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ont-parasail</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ont-pybasecall-client-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ont-pyguppy-client-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ont-tombo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ontodev-valve</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ontoenv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oobleck</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oofem</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oogway-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oomclient</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oommfpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oopt-gnpy-libyang</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ooverpunch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>op-cache-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opaquepy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opbeat</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opcut</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-darts</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-darts-flash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-karto</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-source-risk-engine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-space-toolkit-astrodynamics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-space-toolkit-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-space-toolkit-io</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-space-toolkit-mathematics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-space-toolkit-physics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-space-toolkit-simulation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-spiel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open-xiaoai-server</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open2d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open3d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open3d-cpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open3d-pycg-cpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>open3d-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openai-harmony</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openai-simple</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openair-rs-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openasce</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openassetio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openbabel-wheel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencamlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenCC</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencc-jieba-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencc-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencc-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencgi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openchecks</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencl-rt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencmiss.zinc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencolorio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencovis-contrib-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencovis-contrib-python-headless</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencovis-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencovis-python-headless</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openctm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openctp-ctp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openctp-ctp-cp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openctp-ctp-debug</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openctp-ctpopt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openctp-tts</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-contrib-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-contrib-python-headless</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-contrib-python-headless-rolling</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-contrib-python-rolling</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-cu126</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-ffmpeg-gstreamer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-openvino-contrib-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-python-asen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-python-headless</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-python-headless-fips</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-python-headless-rolling</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-python-inference-engine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv-python-rolling</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencv_cffi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencvutil</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opencvz-contrib-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opendal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opendal-min</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opendaq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opendht</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opendnp3-nightly</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opendp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openesef</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenEXR</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openfdcm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openfga-dsl-parser-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openfhe-numpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openfst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openfst-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opengate-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opengate-core-novis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-core.geode</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-Geosciences</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-GeosciencesIO</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-Inspector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-IO</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-ModuleTemplate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-MyModule</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGeode-Stochastic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenGlider</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opengris-scaler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openhands-ai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openHySim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenImageIO</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opening-hours-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openjij</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openjtalk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openlineage-sql</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openlut</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmander</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmeeg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmesh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmined-psi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmldb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenMM</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenMM-HIP-6</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenMM-HIP-7</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmm-torch-unofficial-cpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmm-torch-unofficial-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmm-torch-unofficial-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmm-unofficial-cpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmm-unofficial-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmm-unofficial-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmmtorch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmodelz</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenModes</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmpi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openmtpk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenNN</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenOPC-DA</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openPMD-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openportal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openpype</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openqp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openqudit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openrlhf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openroad</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opensees</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opensim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openslide-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openslide-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openslide-wrapper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opensmile</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opensolid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openspeleo-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openstep-plist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openstl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openstudio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenTimelineIO</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opentimspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opentrep</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openTSNE</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openTSNEslim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openturns</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opentype-sanitizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OpenVCAD</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino-arm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino-genai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino-nightly</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino-nvidia</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino-tensorflow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino-tokenizers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvino-ubuntu20</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvisus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openvisusnogui</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openweave</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openzl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>openzl-demo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ophac</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oplibcore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opm-simulators</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opmcpg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opof-pomdp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opof-sbmp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oppai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oppaikawata</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oprc-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opsml-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opsml-client</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opsqueue</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opszero-rustypy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opt-generators</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opt-solver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optcalc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optcc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opteryx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opti-solve</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optify</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optik-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optilog</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optimaimg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optimal-psychophysics</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optimal1dclustering</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optimap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optimus-id</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optirustic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optjet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optorch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optrs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optrs-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>optvl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opus-fast-mosestokenizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opusFC</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>opuspy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oqs-licensing</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ora</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oracledb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oracledb-glue</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Orange</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Orange3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Orange3-Associate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Orange3-Associate-zh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Orange3-Network</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Orange3-Network-zh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Orange3-zh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orangecontrib.earth</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orbit-count</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orbitize</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orbitmagic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orbitsi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orbkit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orbslam3-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orca-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orchespy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>order-book</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>order-management-base</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orderedstructs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orekit-jcc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>organizedpointfilters</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OrglabExt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orgora</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>origen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>origen-metal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OriginExt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orion-fhe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orjson-ddb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orjson-pydantic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orjson-pydantic2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orm.py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ormsgpack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ornl-wasp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Orogram</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orphanage</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orpheus-npcf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orphos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orredis</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orso</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ort-nightly-directml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ort-nightly-featurizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orthographic-projector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>orthpol-light</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ortools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ortpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ortpy-lib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>os-scheduler-atlas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>os-signpost</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>os2ds-rules</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>os4dude</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osc-data</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oscar</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OScofo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osgb23dtiles</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osm-shortlink</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osm2gmns</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osmium</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oso</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oso-yurts</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osqp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osqp-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osqp-mkl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osre</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osrt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osstorchconnector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osteoid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osucore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osuparse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>osuppy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>OT1D</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ota42y-python-package-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otdrs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otelanalyzer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oter</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otf2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otfftw</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otl-normalizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otlp-proto</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otmixmod</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otmorris</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otpmml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otrobopt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otsubsetinverse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otsvm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>otterbrix</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ouch-connect</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ouster-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>outcome-pysqlite3-binary</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>outjack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>outlines-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>outlookbot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>outpack-query-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>outport</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ovault</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oven-compiler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>overlap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ovf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ovito</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>owa-epanet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ox-vox-nns</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxapy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxbow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxc-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxDNA-analysis-tools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxen-orm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxen_pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxenai</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxeye</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxidasim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxidd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxide</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxidict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxidize-postal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxidize-xml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxidized-importer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxidized-transformers</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxidizer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxigrad</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxigraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxiida</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxmpl-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oxvox</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>oze-canopen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a href="../">← Back to Index</a></p>
+<p><strong>Generated by:</strong> <a href="https://github.com/Py-Swift/MobilePlatformSupport">MobilePlatformSupport</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>

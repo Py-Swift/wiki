@@ -1,0 +1,5050 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Py-Swift/mobile-wheels-support/binary-without-mobile/L/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>Binary Packages Without Mobile Support - L - PySwiftKit Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#binary-packages-without-mobile-support-l" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="PySwiftKit Wiki" class="md-header__button md-logo" aria-label="PySwiftKit Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PySwiftKit Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Binary Packages Without Mobile Support - L
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Py-Swift/PySwiftKit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PySwiftKit Wiki" class="md-nav__button md-logo" aria-label="PySwiftKit Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PySwiftKit Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Py-Swift/PySwiftKit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PSProject
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            PSProject
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    setup-install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    new-project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            new-project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    kivy-project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/cythonized-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cythonized-project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/buildozer-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    buildozer-integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/new-project/pyproject-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pyproject-configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    pip / site-packages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            pip / site-packages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/site-packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    managing-packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kivy/local-wheels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    local-wheels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wrapping Swift
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Wrapping Swift
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    type-casting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            type-casting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_docs/standard_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    standard-types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_docs/expanded_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    expanded-types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    wrapper-examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            wrapper-examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/hello_world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello world
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/battery_level/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery level
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/device_info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/open_url_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opening URLs in Safari
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/open_url_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opening URLs in Safari (Module Functions)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/firebase_auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firebase Authentication &amp; Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/audio_arpeggiator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AudioKit Arpeggiator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wrapper_examples/uikit_viewcontroller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UIKit ViewController
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mobile Wheels Support
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mobile Wheels Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile-wheels-results/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pure-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pure-python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    binary-without-mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../excluded-packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    excluded-packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="binary-packages-without-mobile-support-l">Binary Packages Without Mobile Support - L</h1>
+<p><strong>Generated:</strong> 2025-11-19 22:36:15<br />
+<strong>Total Packages Starting with L:</strong> 784</p>
+<p><a href="../">← Back to Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Android</th>
+<th>iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>l-net</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>l0learn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>l1bcellml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>l2-r0prover</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>l3d-rs-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lab-1806-vec-db</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>label-studio-brush-rle-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LabelLib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>labelme2yolo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>labgraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>labmaze</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>labneura</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>laboneq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>labscript-c-extensions</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>labugr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>labx-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lacbd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lace</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>laddu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>laddu-mpi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lafs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lagrange-open</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lagraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lakeapi2sql</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lakeops</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lakera-regorus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lakers-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lakesoul</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lalsuite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LAMAReg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LambdaData</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lamdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lameenc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lammps</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lammps-manylinux-2-28</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lamonpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lampy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lana</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lanablas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lancedb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lanczos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>landlab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lanelet2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lanelet2x</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>langchain-exp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>langevin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>langframe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>langid-pyc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>langlint</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>langsmith-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lanms-proper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lanms-pytorch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lap-sdist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lapcsa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lapjv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lapjv-numpy2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lapkt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lapsolver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lapx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>larch-pickle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>larch-reactive</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lark-cython</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>larq-compute-engine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>laser-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>laser-learning-environment</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>laser-measles</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lasprs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lastuuid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>laszip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>latex-gen-z7</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>latex_snippet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LatexSymbolManager-z7</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lattica</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lattica-fhe-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lattifai-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lavalink-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LAVASET</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lavasnek-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lavavu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lavavu-osmesa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lawkit-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>layer-db</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>layered-window</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lazperf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lazrs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lazy-k</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lazybam</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lazydocker-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lazydocker-bin-edge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lazyimp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lbl-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lbry-rocksdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lbry-rocksdb-optimized</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lbson-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lbvh</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lc3-ensemble-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lc3py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lcax</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lclpyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lcm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lcreg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lcs-python-bindings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lcsvec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lda</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lda11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ldafork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ldbpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ldpc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leadtools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leaf-pymavlink</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leafy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leakysim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leann-backend-diskann</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leann-backend-hnsw</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leantree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leap-ie</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leap-labs-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leap-sdk-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leapfrog-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>learner-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lebai-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lebai-sdk-asyncio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leda-upc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ledpixelmath</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LEDSerialExpander</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leechcorepyc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>legacy-hash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>legate</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>legate-wrapper-ww</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>legate-wrapper-ww-mpich</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>legate-wrapper-ww-ompi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leglag</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>legv8parse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leidenalg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lemippy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Lemmagen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lemmagen3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lenlp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lensfunpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lenskit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lenstools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leo-packer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leo-vnpy-ctp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lephare</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lephare-dev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lepton</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lepton-jpeg-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leptoninjector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lepy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lesscode-encryption</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lets-plot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>letsql</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>letterguesser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levdist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leveldb-312</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leveldb-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>leven-clustering</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Levenshtein</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levenshtein-cpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levenshtein-matching</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levenshtein-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Levenshtein-search</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levenshtein-string-matching</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levenshtein_py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levistone</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levoai-gevent</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>levrt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lexset-dataset-bridge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lfkbenchmark</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lfo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lfpreviewer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lgpio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lgraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lgtmeow</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lhafile</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LHAPDF</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lhf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lht</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>li-ezdxf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lib-pod5</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lib-sudoku</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lib-V0</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lib-V1</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lib3mf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libactdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libaio-bins</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libarl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libarvo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libarx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libasd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libaudioverse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libbaghchal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libbash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libbatch</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libbde-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libbids</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libbiosmoother</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libbruteforce</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcachesim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcaes-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcalab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcalab-ogre3d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcalculus</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcasm-clexmonte</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcasm-clexulator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcasm-composition</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcasm-configuration</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcasm-global</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcasm-mapping</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcasm-monte</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcasm-xtal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libCBDetect</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libceed</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcellml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libchirp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libclang</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libclsprot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcoal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcolgraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcomps</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libconeangle</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcoral</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcosimpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcreg-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcrocoddyl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcudf-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcudf-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcuml-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcuml-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcypher-parser-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libcythonconst</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libdash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libdatachannel-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libdaw</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libdebug</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libdeeplake</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libdescriptor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libdlfind</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libdogecoin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libecm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libenigma</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liberate-fhe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libertem-asi-tpx3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libertem-dectris</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libertem-qd-mpx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libesedb-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libevt-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libevtx-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libewf-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libexe-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfcrypto-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfcs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfhe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfive</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfmos-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfoot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfrankapy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfrea</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfsapfs-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfsext-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfsfat-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfshfs-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfsntfs-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfsxfs-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfuzzer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfvde-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfwevt-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfwnt-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfwps-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libfwsi-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libggml-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libgossip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libgrapplefrc-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libgsp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libgzipf-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libhammadpy-text</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libhamming</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libhans</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libhgdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libhmac-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libhsmd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libhupf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libhwp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libigl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libimagequant</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libinjection-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libinjection-wheel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libipld</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libiq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libjaka</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libjdrones</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libjpathgen</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libjpg-bins</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libkubeselector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libkvikio-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libkvikio-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liblathe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liblinear-multicore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liblinear-official</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liblip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liblivemedia</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liblnk-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liblrs-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libluksde-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmapper</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmav</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libMcPhase</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmdbx</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmediainfo-cffi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmir</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmodi-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmpsse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmsiecf-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmsym</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmultisense</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libmwfn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libnano</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libndcurves</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libnk2-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libnumerixpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libolecf-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libonvif</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libopencor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libosdp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libosim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libp2p-go</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libparse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpasta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpastelid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpecos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpep-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpff-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libphdi-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpinocchio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpitlakq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpng-bins</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpresign</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpsc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpsf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpss-aws</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpymath</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpymcr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpynix</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libpypostal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libqasm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libqcow-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librabbitmq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librabbitmq-fork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libraft-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libraft-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librapid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librapidsmpf-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librapidsmpf-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libraw-cffi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librclone</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LibRecommender</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libreda</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libreda-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libredr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libregf-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libretto</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librmm-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librmm-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libroadrunner</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libroadrunner-experimental</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>librtd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsass</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsass-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsass-wheel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsbmlnetwork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsbmlnetworkeditor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsbne</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libscca-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libscientific</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libscrc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsemigroups-pybind11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsemsim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsettings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsgd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libSGM</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsigscan-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsm3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsm3py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsmdev-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsmraw-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsniffpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsonata</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsourcemap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libspectrum</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libspeech</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libspot</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsps</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsql</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsql-experimental</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsql-morewheels</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsquiggly</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libssp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libstreamrproxyclient</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libstreamvbyte</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsumo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libsvm-official</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libtempo-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libterraform</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libtfr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libthermo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libtimecontrol</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libtimetag</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libtorrent</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libtpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libtraci</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libtsid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LIBTwinSVM</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libucx-cu11</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libucx-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libucx-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libucxx-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libucxx-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liburlparser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libusb-package</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libusb-pkg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libuuu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvalkey</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvanitas</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvcell</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvhdi-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvmdk-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvmi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvna</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvsapm-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvsbsdl-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvsc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvsgpt-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvshadow-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvslvm-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libvsmbr-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libwannier90</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libwebm-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libwebview</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libwrc-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libxmplite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libzim</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libzrod</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>libzt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>license-tool-ias</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>licensepy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>licensespring-hardware-id-generator</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>licensifylib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lichenpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>licofage</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lidar-aug</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lido-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lido-sdk-fork</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lie-learn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lie-learn-escience</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lief</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lielab</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lienv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liepy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liesym</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>life-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liftover</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ligand</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>light-compressor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>light-curve</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>light-database</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>light-labyrinth</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightconv-layer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightdock</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightfm-next</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightgbm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightguide</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightlog</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightly-mundig</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightmotif</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightning-fast</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightningcss</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightningcss-cli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightrdf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightrun</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LightSim2Grid</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightspark-crypto-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightstep-streaming</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LightWave2D</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lightweaver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LightWin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LightZero</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ligo-hires-gps-time</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ligo-segments</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ligo.skymap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liknorm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lilcom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lilypond</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lime-trading-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>limedriver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LimeReport-qt-6-4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LimeReport-qt-6-4-Z</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LimeReport-qt-6-7</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LimeReport-qt-6-7-Z</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>limix-legacy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lincs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lindera-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lindera-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lindera-python-cc-cedict</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lindera-python-cjk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lindera-python-ipadic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lindera-python-ko-dic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lindera-python-unidic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lindo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>line-detector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>line-intersect-2d</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>line-profiler</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>line-profiler-andy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>line-protocol-parser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lineagekit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linear_segment</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LinearFold</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linearfold-unofficial</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linearly-varying-binomial-distribution</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linearmodels</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linearpartition-unofficial</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linecard</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linefit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linen-closet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lineparser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liner-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linfa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LingHu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LingmoUIPy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lingo-api</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lingodb-bridge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lingua-language-detector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lingua-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lingua-py-unofficial</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linguars</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lingvo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lingvo-jax</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linkapy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LinkPython-extern</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linksocks</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linkspace</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lintrunner</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>linux-aio-bind</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LiOH</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lipyds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lipyphilic</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liquibook</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liquid-dsp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liquidSVM</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liru</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lisaanalysistools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lisaanalysistools-cpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lisbon</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>listen-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>listen2_rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lite-camera</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litebem</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litebook</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litendb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litequant</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>literate-octo-one-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>literate-octo-one-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>literate-octo-two-cu12</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>literate-octo-two-cu13</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liteshare</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litestar-msgspec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litestream-bin</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litesync</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litesync-app</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>litmus-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>littlefs-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liuli</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>live-coverage</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>live2d-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>livekit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>livekit-blingfire</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>livekit-irontec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>livekit-plugins-browser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>livekit-plugins-noise-cancellation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>livelocals</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lively-tk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>liveness-detector</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>livingbio-moviepy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lk-moe</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lk-stat-package</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LKHpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ll-xist</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llama-core</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llama-cpp-cffi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llama-cpp-python-cross</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llama-cpp-python-kirp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llama-rs-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llama-tool-parser-native</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llamacpp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llamacpypy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llamakey</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LlaMasterKey</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lldb-for-pwndbg</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lldb-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LLDT</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llguidance</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llm-api-access</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llm-manager</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llm-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llm-rs-metal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llm-rs-opencl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llm-runner</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llm-tool</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llmcc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llms-txt-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lln-libparse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llnl-hatchet</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llun</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llun-mcp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llvm2py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llvmlite</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llvmpym</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>llyevatools</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lm-deezer-bf-dec</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmcache</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmcache-test-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmdeploy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmfpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmi-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmlogits</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmnr-baml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmnr-claude-code-proxy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lmprep</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lnfundamentals</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lnumber</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>load-data-from-postgresql-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>load_market_data</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loadmeta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lobmp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>localcartesian</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>location-checker</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>location-processor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loco-bindings</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loco-hd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>locobuzz-protocol-buffers-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>locobuzz-python-configuration</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>locus-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>locustdb</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lofti-gaia</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>log-count-util</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>log-lammps-reader</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>log-surgeon-ffi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loganek-python-manylinux-demo</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Logbook</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logbox</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logcrypt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logdecomp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logical-rush</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logkeeper-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logly</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logprep</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logru</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logseq-doctor</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>logxide</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lol-serializer</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>longbridge</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>longitudinal-tomography</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>longport</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>looger</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loop-cgal</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loop-tool</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loop-tool-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lopaths</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lophat</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lord-ahrs-driver</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loregrep</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loristrck</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loro</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lotf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loudness</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>louvain</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>louvain-github</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>low-index</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lowLevelDataTransformation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lowtime</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lox-space</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Loxoc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>loxwebsocket</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lp-sparsemap</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lp1379</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lpmalgos</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lpqtree</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lpsd</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lpu</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lrcalc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LRMCS</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lrparse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lrspline</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lrucache-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ls-trace</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsdelta</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsdembed</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsds</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsdyna-mesh-reader</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lshashing</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LSHC</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LSHCy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsj-toolkit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsm</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsqfit</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsreader</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsst-sphgeom</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lsv-panel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ltd-rust</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ltl-augmentation</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ltp-extension</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>ltr</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lttbc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luah</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LuBanPy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LUBEAT</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lucas-igraph</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luce-otp</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lucidmq</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lucit-licensing-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lucit-ubdcc-dcn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lucit-ubdcc-mgmt</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lucit-ubdcc-restapi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lucit-ubdcc-shared-modules</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luigi-engine</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luisa-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lukeparser</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lumber-jack</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lumberkid-rs</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lummao</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luna-quantum</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lunapi</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luoshu-python-sdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lupa</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lupapy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>Lurrn</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lutlib</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lutz</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luxcorerender</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luxcorerender-opencl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>luxeprint</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lvgl</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lvpyio</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lwk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lxman</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lxml</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lxml-odidev</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lxns</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lxpyodbc</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lychpy</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lychrel</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lycon2</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lyra2re2-hash</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lyra2re2-hash-test</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lyric-py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lyricore</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lyysdk</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lz4</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lz4-flex_py</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lz4ext</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lz4inv</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzallright</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>LZBEAT</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzcomplexity</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzf-python</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzfse</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzhw</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzip</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzma-c</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzma-cf</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzma-pyo3</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzokay</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzss</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+<tr>
+<td><code>lzstring-optimized</code></td>
+<td>⚠️ Not available</td>
+<td>⚠️ Not available</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a href="../">← Back to Index</a></p>
+<p><strong>Generated by:</strong> <a href="https://github.com/Py-Swift/MobilePlatformSupport">MobilePlatformSupport</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>
