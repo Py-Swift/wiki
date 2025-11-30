@@ -1,3 +1,0 @@
-# Ignore downloaded WASM files from MobileWheelsDB plugin
-mobilewheels_assets/*.wasm
-**/MobileWheelsDatabase.wasm
