@@ -2,98 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/Py-Swift/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/setup/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/mobile-wheels-support/excluded-packages/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/mobile-wheels-support/kivy-ios-vs-pep730/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/mobile-wheels-support/mobile-wheels-results/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/Py-Swift/mobile-wheels-support/package-search-old/</loc>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/mobile-wheels-support/package-search/</loc>
-         <lastmod>2025-11-29</lastmod>
-    </url>
-    <url>
-         <loc>https://github.com/Py-Swift/mobile-wheels-support/mobile-wheels-sql/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/project/kivy/local-wheels/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/project/kivy/site-packages/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/project/kivy/new-project/buildozer-integration/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/project/kivy/new-project/create/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/project/kivy/new-project/cythonized-project/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/project/kivy/new-project/pyproject-configuration/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_docs/expanded_types/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_docs/standard_types/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_docs/types/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_examples/audio_arpeggiator/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_examples/battery_level/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_examples/device_info/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_examples/firebase_auth/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_examples/hello_world/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_examples/open_url_classes/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_examples/open_url_functions/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
     <url>
          <loc>https://github.com/Py-Swift/wrapper_examples/uikit_viewcontroller/</loc>
-         <lastmod>2025-11-29</lastmod>
+         <lastmod>2025-11-30</lastmod>
     </url>
 </urlset>
